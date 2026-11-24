@@ -183,7 +183,7 @@ sudo systemctl reload apache2
 ```bash
 sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
 ```
-### Opening the website in my browser using URL and IP address
+### Opening the website in my browser using my public DNS and IP address
 
 ```bash
 http://13.62.99.206:80
@@ -228,7 +228,7 @@ phpinfo();
 ```
 ### Refreshed my browser: PHP 8.5.4 info page displayed successfully
 
-![Browser](screenshots/Browser-1.png)
+![Browser](screenshots/browser-1.png)
 
 ### Remove the file i created as it contains sensitive information about my PHP environment and my Ubuntu server.
 
